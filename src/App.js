@@ -10,16 +10,12 @@ const app = (props) => {
       { name: "Olga", age: 55 },
     ],
     otherState: "some other value",
-  });
+  };
 
-  const [otherState, setOtherState] = useState("some other value");
-
-  console.log(personsState, otherState);
-
-  const switchNameHandler = () => {
+  switchNameHandler = () => {
     // console.log("Was clicked");
-    // DON'T DO LIKE THIS personsState.persons[0].name = "Maria";
-    setPersonsState({
+    // DON'T DO LIKE THIS this.state.persons[0].name = "Maria";
+    this.setState({
       persons: [
         { name: "Maria", age: 25 },
         { name: "Barsik", age: 16 },
