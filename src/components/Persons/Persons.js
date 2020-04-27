@@ -17,6 +17,8 @@ class Persons extends Component {
     } else {
       return false;
     }
+
+    // return true
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
